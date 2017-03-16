@@ -16,7 +16,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    loadTodos()
+    loadTodos('ap/channel/1/')
       .then(todos => this.setState({todos: todos.results}))
   }
 

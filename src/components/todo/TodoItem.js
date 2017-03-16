@@ -17,5 +17,5 @@ export const TodoItem = (props) => {
 TodoItem.propTypes = {
   bssid: React.PropTypes.string.isRequired,
   isComplete: React.PropTypes.bool,
-  essid: React.PropTypes.number.isRequired
+  essid: React.PropTypes.string.isRequired
 }
