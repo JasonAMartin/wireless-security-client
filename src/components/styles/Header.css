@@ -1,0 +1,5 @@
+.title {
+  background: black;
+  color: var(--colorMuted);
+  font-size: 28px;
+}

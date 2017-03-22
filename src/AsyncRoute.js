@@ -6,22 +6,22 @@ const AsyncRoute = React.createClass({
     props: object,
     loadingPromise: object
   },
-  getInitialState() {
+  getInitialState () {
     return {
       loaded: false
     }
   },
-  componentDidMount() {
+  componentDidMount () {
     this.props.loadingPromise.then((module) => {
       this.component = module.default
       this.setState({loaded: true})
     })
   },
-  render() {
-    if(this.state.loaded) {
-      return <this.component{...this.props.props} />
+  render () {
+    if (this.state.loaded) {
+      return <this.component {...this.props.props} />
     } else {
-      return <h1>LOADING THIS STUFF ...</h1>
+      return <h1>loading...</h1>
     }
   }
 })
