@@ -1,0 +1,13 @@
+.container {
+  color: var(--mainFontColor);
+  font-size: .8rem;
+  margin: 0 auto;
+  padding: .75rem 0;
+  width: 100%;
+}
+
+.content {
+  margin: auto;
+  text-align: center;
+  width: 65%;
+}

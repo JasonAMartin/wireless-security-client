@@ -1,0 +1,8 @@
+.ratinglabel {
+  color: var(--colorLightGray);
+  text-transform: uppercase;
+}
+
+.filledstar {
+  color: var(--colorModernRed);
+}

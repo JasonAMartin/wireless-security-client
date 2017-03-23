@@ -1,0 +1,23 @@
+.loadertext {
+  color: var(--colorModernWhite);
+  font-size: 3rem;
+}
+
+.content {
+  margin: 10% auto;
+  width: 22%;
+}
+
+.loader {
+  color: var(--colorModernWhite);
+  font-size: 10rem;
+  margin-bottom: 2rem;
+}
+
+.container {
+  background: var(--colorModernBlue);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}

@@ -3,6 +3,8 @@ import { connect } from 'react-redux'
 import { getApiData } from '../actions/actionCreators'
 import Header from '../components/Header'
 import { SET_ESSID } from '../actions/actions'
+import Loader from '../components/Loader'
+import ESSID from '../components/ESSID'
 
 const { shape, array, func } = React.PropTypes
 
@@ -19,14 +21,13 @@ const APDetails = React.createClass({
   render () {
     let display;
     if (Object.keys(this.props.essid).length > 0) {
-      display = `34 Got data: ${this.props.essid.results[0].bssid}`
+      display = <ESSID data={this.props.essid.results[0]}/>
     } else {
-      display = "2No info. Loading .........................."
+      display = <Loader/>
     }
 
     return (
       <div className='details'>
-        <Header />
         { display }
       </div>
     )
